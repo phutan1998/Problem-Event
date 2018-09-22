@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pc.textandroid.MainActivity">
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Các Kiểu Lập Trình Sự Kiện "
+        android:gravity="center"
+        android:textColor="#fefcfc"
+        android:textSize="25dp"
+        android:background="#0e7e10"/>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#1111"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Số a: "
+            android:gravity="center"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView"
+            android:text="Số b: "
+            android:textSize="40dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textvievkq"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#fefcfc"
+        android:textSize="25dp"
+        android:background="#0e7e10"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/textvievkq"
+        android:text="Tổng 2 số "
+        android:onClick="bnt_tong2so"/>
+
+    <RelativeLayout
+        android:id="@+id/relayout1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/relativeLayout">
+
+
+
+        <EditText
+            android:id="@+id/editsoa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="nhập số a"/>
+        <EditText
+            android:id="@+id/editsob"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:hint="nhập số b"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
